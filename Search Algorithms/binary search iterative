@@ -1,0 +1,17 @@
+def binary_search_iterative(lst, item):
+    top=len(lst)-1
+    bottom=0
+    mid=(top+bottom)//2
+    u=None
+    while bottom<=top:
+        if item==lst[mid]:
+            u=mid
+            return u
+        elif item>lst[mid]:
+            bottom=mid+1
+            mid=(top+bottom)//2
+        elif item<lst[mid]:
+            top=mid-1
+            mid=(top+bottom)//2
+    if u==None:
+        return -1
