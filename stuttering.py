@@ -8,7 +8,7 @@ def enQueue(lst,data):
     return y
 
 
-def stut(lst):
+def st(lst):
     a=[]
     p=deQueue(lst)
     a.append(p)
@@ -18,6 +18,6 @@ def stut(lst):
 def stutter(lst):
     t=[]
     for i in range(len(lst)):
-        w=stut([lst[i]])
+        w=st([lst[i]])
         t=t+w
     return t
