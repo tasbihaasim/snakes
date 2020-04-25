@@ -9,6 +9,10 @@ def isEqual(opening,closing):
 
 
 def balanced_parenthesis(exp):
+    """
+    Args: 
+    exp: expression to be evaluated
+    """
     stack = []
     for i in range(0 , len(exp)):
         if (exp[i] == '(' or exp[i] == '{' or exp[i] == '['):
